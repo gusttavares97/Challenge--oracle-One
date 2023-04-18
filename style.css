@@ -1,0 +1,99 @@
+html, body, div, footer, header,
+menu, nav section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    height: 700px;
+}
+
+
+
+.logo{ 
+    height: 50px;
+    margin: 40px;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.texto {
+    text-indent: 5px;
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 16px;
+    height: 420px;
+    width: 800px;
+    border-color: transparent;
+    outline: none;
+  }
+
+.texto:hover{
+    border-width: 2px;
+    border-color:  blue;
+    border-radius: 8px;
+}
+
+
+
+.saidadetexto{
+    height: 550px;
+    width:230px;
+    
+    outline: none;
+    border-width: 2px;
+    border-color:  blue;
+    border-radius: 8px;
+    background-image: url(./img/High\ quality\ products\ 1\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 300px ;
+    background-position: center;
+    
+}
+.btn-cop{
+     display: block;
+     padding: 20px 100px;
+     border-radius: 8px;
+     border-style: none;
+     color: azure;
+     background-color: rgb(51, 51, 163);
+    }
+    
+    .btn-cop:hover{
+    background-color: blue;
+    transition: 0.3s;
+
+}
+
+.sec-btn{
+    margin-left: 120px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 20px 100px;
+    border-radius: 8px;
+    border-style: none;
+    color: azure;
+    background-color: rgb(51, 51, 163);
+   }
+   
+   .btn:hover{
+   background-color: blue;
+   transition: 0.3s;
+
+}
+
+
+
+
+
+
+
