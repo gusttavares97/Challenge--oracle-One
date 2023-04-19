@@ -12,15 +12,15 @@
         <img class="logo "  src="./img/Vector.png">
     </header>
 
-
+<main>
     <section class="section">
         <div>
             <form>
              <textarea  class="texto"  placeholder="Digite seu texto"   row="30"></textarea> 
             <div class="sec-btn">
              <p>⚠️ Apenas Letras minusculas e sem acento.</p>
-            <button class="btn" id="crip">Criptografar</button>
-            <button class="btn">Descriptografar</button>
+            <button class="btn" id="crip"onClick="btn()" >Criptografar</button>
+            <button class="btn" onClick="btnDescript()">Descriptografar</button>
             </div>
          </form>
 
@@ -30,12 +30,12 @@
             <form >
             <textarea class="saidadetexto" class="" row="30">
             </textarea>
-            <button class="btn-cop">Copiar</button>
+            <button class="btn-cop" onClick="btnCopia()">Copiar</button>
         </form>
         </div>
 
     </section>
-    
-    <script src="./script.js"></script>
+</main>
+    <script src="./script.js></script>
 </body>
 </html>
