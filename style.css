@@ -9,10 +9,10 @@ menu, nav section {
 }
 body{
     height: 700px;
+    background-image: url(./img/gif.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-
-
-
 .logo{ 
     height: 50px;
     margin: 40px;
@@ -23,7 +23,6 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
-
 .input-texto{
     text-indent: 5px;
     margin-top: 60px;
@@ -34,19 +33,14 @@ body{
     border-color: transparent;
     outline: none;
   }
-
 .input-texto:hover{
     border-width: 2px;
     border-color:  blue;
     border-radius: 8px;
 }
-
-
-
 .mensagem{
     height: 550px;
     width:230px;
-    
     outline: none;
     border-width: 2px;
     border-color:  blue;
@@ -55,7 +49,6 @@ body{
     background-repeat: no-repeat;
     background-size: 300px ;
     background-position: center;
-    
 }
 .btn-cop{
      display: block;
@@ -65,17 +58,13 @@ body{
      color: azure;
      background-color: rgb(51, 51, 163);
     }
-    
     .btn-cop:hover{
     background-color: blue;
     transition: 0.3s;
-
 }
-
 .sec-btn{
     margin-left: 120px;
 }
-
 .btn{
     display: inline-block;
     padding: 20px 100px;
@@ -90,14 +79,16 @@ body{
    transition: 0.3s;
 
 }
-
 @media (max-width: 800px){
+    body{
+        background-image: url(./img/gif.gif);
+        background-size: 1800px  1800px;
+    }
     .main{
         display: grid;
         grid-template-columns: 1fr ;
         gap: 50px;
-    }
-    
+    }   
     .input-texto{
         text-indent: 5px;
         margin-top: 60px;
@@ -108,12 +99,9 @@ body{
         border-color: transparent;
         outline: none;
       }
-
-      .sec-btn{
-        
+      .sec-btn{ 
         margin-left: 60px;
     }
-
     .btn{
         display: inline-block;
         padding: 20px 80px;
@@ -123,18 +111,11 @@ body{
         color: azure;
         background-color: rgb(51, 51, 163);
        }
-       
-       
-    
-    
-    
     .mensagem{
         height: 250px;
         width:230px;
         margin-left: 60px;
-        
     }    
-
     .btn-cop{
         margin-left: 60px;
        }
