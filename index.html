@@ -8,34 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img class="logo "  src="./img/Vector.png">
+    <header class="logo">
+            <img  src="./img/Vector.png" alt="logo alura">
+        
+            
     </header>
-
-<main>
-    <section class="section">
-        <div>
-            <form>
-             <textarea  class="texto"  placeholder="Digite seu texto"   row="30"></textarea> 
+    
+    <main class="main">
+        <section class="inputTexto">
+            <textarea class="input-texto" cols="60" rows="9" placeholder="Digite ou cole seu texto aqui!!!"></textarea>
             <div class="sec-btn">
-             <p>⚠️ Apenas Letras minusculas e sem acento.</p>
-            <button class="btn" id="crip"onClick="btn()" >Criptografar</button>
-            <button class="btn" onClick="btnDescript()">Descriptografar</button>
+            <button class="btn" onclick="btnCripto()">Criptografar</button>
+            <button class="btn" onclick="btnDescripto()">Descriptografar</button>
             </div>
-         </form>
+        </section>
+    
+        <section>
+            <textarea class="mensagem" cols="50" rows="15"></textarea>
+            <button class="btn-cop" onclick="btnCopiar()">Copiar</button>
+        </section>    
+    </main> 
+<script src="./script.js"></script>
 
-        </div>
-
-        <div>
-            <form >
-            <textarea class="saidadetexto" class="" row="30">
-            </textarea>
-            <button class="btn-cop" onClick="btnCopia()">Copiar</button>
-        </form>
-        </div>
-
-    </section>
-</main>
-    <script src="./script.js></script>
 </body>
 </html>
