@@ -1,16 +1,19 @@
 const inputTexto = document.querySelector(".input-texto");
 const mensagem = document.querySelector(".mensagem");
 
+
 function btnCripto() {
     const textoEncriptado = encriptar(inputTexto.value);
     mensagem.value = textoEncriptado;
     mensagem.style.backgroundImage = "none";
 }
 
+
 function encriptar(stringEncriptada) {
     let codificar = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
     stringEncriptada = stringEncriptada.toLowerCase();
     stringEncriptada = stringEncriptada.normalize("NFD").replace(/[^a-zA-Z\s]/g, "");
+
 
     for (let i = 0; i < codificar.length; i++) {
         if (stringEncriptada.includes(codificar[i][0])) {
@@ -26,6 +29,7 @@ function btnDescripto() {
     mensagem.style.backgroundImage = "none";
 }
 
+
 function descriptar(stringDescriptada) {
     let descodificar = [["ai", "a"], ["enter", "e"], ["imes", "i"], ["ober", "o"], ["ufat", "u"]];
     
@@ -36,6 +40,7 @@ function descriptar(stringDescriptada) {
     }
     return stringDescriptada;
 }
+
 
 function btnCopiar() {
     const textoCopiado = document.querySelector(".mensagem");
